@@ -1,125 +1,65 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { MdEmail, MdLock } from "react-icons/md";
 import { CgUserlane } from "react-icons/cg";
+import "../scss/sign.scss";
 
 const Register = () => {
-  
-  const [input, setInput] = useState({
-    name:'',
-    email:'',
-    password:'',
-    confirm:''
-  })
+  const history = useHistory();
 
-  const handleSubmit = (e)=>{
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirm: "",
+  });
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(input.name +" / "+ input.email+" / "+input.password +" / "+ input.confirm)
-  }
+    console.log(
+      input.name +
+        " / " +
+        input.email +
+        " / " +
+        input.password +
+        " / " +
+        input.confirm
+    );
+  };
 
   return (
-    <div style={{ display: "flex" }}>
-      <section
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flex: "1",
-          marginLeft: "15px",
-          padding: "100px 0",
-        }}
-      >
-        <form
-          action=""
-          onSubmit={handleSubmit}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            padding: "20px",
-            width: "400px",
-            height: "500px",
-          }}
-        >
+    <div className="sign" style={{ display: "flex" }}>
+      <section>
+        <form action="" onSubmit={handleSubmit}>
           <h1 style={{ fontSize: "32px" }}>Sign up</h1>
-          <div
-            id="name"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              borderBottom: "1px solid lightgray",
-              marginBottom: "20px",
-            }}
-          >
+          <div id="name">
             <CgUserlane style={{ fontSize: "20px" }} />
             <input
               type="text"
               placeholder="Name"
-              style={{
-                flex: "1",
-                padding: "10px",
-                outline: "none",
-                border: "none",
-                fontWeight: "bold",
-              }}
               value={input.name}
-              onChange={(e)=>setInput({...input,name:e.target.value})}
+              onChange={(e) => setInput({ ...input, name: e.target.value })}
             />
           </div>
-          <div
-            id="email"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              borderBottom: "1px solid lightgray",
-              marginBottom: "20px",
-            }}
-          >
+          <div id="email">
             <MdEmail style={{ fontSize: "20px" }} />
             <input
               type="text"
               placeholder="Email"
-              style={{
-                flex: "1",
-                padding: "10px",
-                outline: "none",
-                border: "none",
-                fontWeight: "bold",
-              }}
               value={input.email}
-              onChange={(e)=>setInput({...input,email:e.target.value})}
+              onChange={(e) => setInput({ ...input, email: e.target.value })}
             />
           </div>
-          <div
-            id="password"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              borderBottom: "1px solid lightgray",
-              marginBottom: "30px",
-            }}
-          >
+          <div id="password">
             <MdLock style={{ fontSize: "20px" }} />
             <input
               type="password"
               placeholder="Password"
-              style={{
-                flex: "1",
-                padding: "10px",
-                outline: "none",
-                border: "none",
-                fontWeight: "bold",
-              }}
               value={input.password}
-              onChange={(e)=>setInput({...input,password:e.target.value})}
+              onChange={(e) => setInput({ ...input, password: e.target.value })}
             />
           </div>
-          <div
-            id="corfirm_password"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              borderBottom: "1px solid lightgray",
-              marginBottom: "30px",
-            }}
-          >
+          <div id="corfirm_password">
             <MdLock style={{ fontSize: "20px" }} />
             <input
               type="password"
@@ -132,25 +72,27 @@ const Register = () => {
                 fontWeight: "bold",
               }}
               value={input.confirm}
-              onChange={(e)=>setInput({...input,confirm:e.target.value})}
+              onChange={(e) => setInput({ ...input, confirm: e.target.value })}
             />
           </div>
 
-          
-          <input
-            type="submit"
-            value="Sign up"
-            style={{
-              padding: "15px 10px",
-              marginBottom: "15px",
-              fontWeight: "bold",
-              outline: "none",
-              border: "1px solid lightgray",
-              backgroundColor: "#0061fe",
-              color: "white",
-            }}
-          />
-          
+          <input className="submit" type="submit" value="Sign up" />
+          <div className="others">
+            <input
+              type="button"
+              value="Home"
+              onClick={() => {
+                history.push("/");
+              }}
+            />
+            <input
+              type="button"
+              value="Sign in"
+              onClick={() => {
+                history.push("/signin");
+              }}
+            />
+          </div>
         </form>
       </section>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import "../scss/notice.scss";
 import { Aside, Nav } from "../components/index";
 
 const notice_list = [
@@ -22,75 +23,28 @@ const notice_list = [
 
 const Notice = () => {
   return (
-    <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+    <div className="notice">
+      <div className="nav-box">
         <Nav />
       </div>
-      <div
-        style={{
-          display: "flex",
-          fontFamily: "sans-serif",
-          margin: "0 350px",
-          justifyContent: "center",
-        }}
-      >
+      <div className="body-box">
         <aside>
           <Aside />
         </aside>
-        <section
-          style={{
-            flex: "1",
-            marginLeft: "50px",
-            display: "flex",
-            justifyContent: "center",
-            margin: "0 30px",
-          }}
-        >
-          <div
-            id="notice"
-            style={{
-              width: "100%",
-              border: "none",
-              borderTop: "1px solid lightgray",
-              borderBottom: "1px solid lightgray",
-            }}
-          >
-            <ul style={{ margin: "0", padding: "0", minWidth: "450px" }}>
-              <li style={{ display: "flex", width: "100%" }}>
-                <h5
-                  style={{
-                    flex: "1",
-                    textAlign: "center",
-                    padding: "12px",
-                    margin: "0",
-                  }}
-                >
-                  제목
-                </h5>
-                <h5
-                  style={{
-                    textAlign: "center",
-                    padding: "12px 20px",
-                    margin: "0",
-                  }}
-                >
-                  작성시간
-                </h5>
+        <section className="notice-contents">
+          <div className="notice-list">
+            <ul className="list-ul">
+              <li>
+                <h5 className="title">제목</h5>
+                <h5 className="date">작성시간</h5>
               </li>
             </ul>
 
             {notice_list.map((ele, index) => {
               return (
-                <ul style={{ margin: "0", padding: "0" }} key={index}>
+                <ul key={index}>
                   <li
                     style={{
-                      display: "flex",
-                      width: "100%",
                       borderTop: "1px solid #999999",
                       cursor: "pointer",
                     }}
@@ -103,8 +57,6 @@ const Notice = () => {
                     <h5
                       style={{
                         flex: "1",
-                        padding: "12px",
-                        margin: "0",
                       }}
                     >
                       {ele.title}
@@ -113,7 +65,6 @@ const Notice = () => {
                       style={{
                         textAlign: "center",
                         padding: "12px 10px",
-                        margin: "0",
                         color: "#999999",
                       }}
                     >

@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 380px;
+  min-width: 760px;
+  width: 100%;
+  h1 {
+    a {
+      color: black;
+    }
+  }
+  .nav_list {
+    font-family: Architects Daughter, cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      margin: 0;
+      padding: 0;
+      a {
+        h5 {
+          margin-right: 15px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

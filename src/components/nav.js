@@ -1,38 +1,19 @@
 import React from "react";
+import "../scss/nav.scss";
 
 const Nav = () => {
   return (
-    <div
-      className="nav"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        margin: "10px 380px",
-        minWidth: "760px",
-        width: "100%",
-      }}
-    >
+    <div className="nav">
       <h1>
-        <a href="/" style={{ color: "black" }}>
-          SEOB
-        </a>
+        <a href="/">SEOB</a>
       </h1>
-      <ul
-        className="nav_list"
-        style={{
-          fontFamily: "sans-serif",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <li style={{ margin: "0", padding: "0" }}>
+      <ul className="nav_list">
+        <li>
           <a href="/mypage">
-            <h5 style={{ marginRight: "15px", padding: "0" }}>My page</h5>
+            <h5>My page</h5>
           </a>
         </li>
-        <li style={{ margin: "0", padding: "0" }}>
+        <li>
           <a href="/signin">
             <h5 style={{ margin: "0", padding: "0" }}>Login</h5>
           </a>

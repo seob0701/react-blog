@@ -1,0 +1,101 @@
+.sign {
+  display: flex;
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 15px;
+    padding: 100px 0;
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      width: 400px;
+      height: 500px;
+      h1 {
+        font-size: 32px;
+      }
+      #name {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 30px;
+        input {
+          flex: 1;
+          padding: 10px;
+          outline: none;
+          border: none;
+          font-weight: bold;
+        }
+      }
+      #email {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 30px;
+        input {
+          flex: 1;
+          padding: 10px;
+          outline: none;
+          border: none;
+          font-weight: bold;
+        }
+      }
+      #password {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 30px;
+        input {
+          flex: 1;
+          padding: 10px;
+          outline: none;
+          border: none;
+          font-weight: bold;
+        }
+      }
+      #corfirm_password {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 30px;
+        input {
+          flex: 1;
+          padding: 10px;
+          outline: none;
+          border: none;
+          font-weight: bold;
+        }
+      }
+      #checkbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        input {
+          zoom: 1.4;
+          margin-right: 8px;
+        }
+      }
+      .submit {
+        padding: 15px 10px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        outline: none;
+        border: 1px solid lightgray;
+        background-color: #0061fe;
+        color: white;
+      }
+      .others {
+        display: flex;
+        justify-content: space-between;
+        input {
+          background-color: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
