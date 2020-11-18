@@ -14,14 +14,15 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "node-sass": "^4.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server":"cd src && cd server && nodemon index.js",
+    "server": "cd src && cd server && nodemon index.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn start\""
   },
   "eslintConfig": {
