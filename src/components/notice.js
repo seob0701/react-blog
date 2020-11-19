@@ -1,6 +1,6 @@
 import React from "react";
 import "../scss/notice.scss";
-import {useHistory} from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 import { Aside, Nav } from "../components/index";
 
 const notice_list = [
@@ -28,10 +28,9 @@ const notice_list = [
 ];
 
 const Notice = () => {
- 
-  const history = useHistory()
+  const history = useHistory();
   const handleClick = (ele) => {
-    history.push('/contents')
+    history.push("/contents");
   };
   //store 공부하자!!! 데이터 전달을 위해서
 
@@ -83,6 +82,17 @@ const Notice = () => {
                 </ul>
               );
             })}
+
+            <section className="createNotice">
+              <button
+                onClick={() => {
+                  history.push("/write");
+                }}
+              >
+                공지사항
+              </button>
+              {/* 관리자 계정에게만 디스플레이 */}
+            </section>
           </div>
         </section>
       </div>
