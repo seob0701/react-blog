@@ -48,7 +48,7 @@ const Aside = () => {
         <b>Information</b>
         <address>
           <p>Tel. 010-9688-5549</p>
-          <p>Email. shimyuseob@gmail.com</p>
+          <p>E-mail. shimyuseob@gmail.com</p>
           <p>Addr. Korea</p>
         </address>
       </section>
