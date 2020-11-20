@@ -1,19 +1,68 @@
-.home {
-  .nav-box {
-    display: flex;
-    justify-content: center;
+$phone: "Only screen and (max-width : 767px)";
+$tablet: "Only screen and (min-width : 768px)";
+$desktop: "Only screen and (min-width : 1024px)";
+
+@media #{$phone} {
+  .diary {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      flex-direction: column-reverse;
+      font-family: sans-serif;
+      // margin: 0 350px;
+      justify-content: center;
+      .diary-section {
+        flex: 1;
+        margin: 10px;
+        font-family: Architects Daughter, cursive;
+        min-width: 345px;
+        background-color: lightcoral;
+      }
+    }
   }
-  .body-box {
-    display: flex;
-    font-family: sans-serif;
-    margin: 0 350px;
-    justify-content: center;
-    .diary-section {
-      flex: 1;
-      margin: 0 30px;
-      font-family: Architects Daughter, cursive;
-      min-width: 450px;
-      background-color: lightcoral;
+}
+@media #{$tablet} {
+  .diary {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0 350px;
+      justify-content: center;
+      .diary-section {
+        flex: 1;
+        margin: 0 10px;
+        font-family: Architects Daughter, cursive;
+        min-width: 450px;
+        background-color: lightcoral;
+      }
+    }
+  }
+}
+@media #{$desktop} {
+  .diary {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0 350px;
+      justify-content: center;
+      .diary-section {
+        flex: 1;
+        margin: 0 30px;
+        font-family: Architects Daughter, cursive;
+        min-width: 450px;
+        background-color: lightcoral;
+      }
     }
   }
 }

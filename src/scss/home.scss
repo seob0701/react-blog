@@ -3,28 +3,66 @@ $tablet: "Only screen and (min-width : 768px)";
 $desktop: "Only screen and (min-width : 1024px)";
 
 @media #{$phone} {
+  .home {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      flex-direction: column-reverse;
+      font-family: sans-serif;
+      // margin: 0 350px;
+      justify-content: center;
+      .home-section {
+        flex: 1;
+        margin: 10px;
+        font-family: Architects Daughter, cursive;
+        min-width: 345px;
+        background-color: lightcoral;
+      }
+    }
+  }
 }
 @media #{$tablet} {
+  .home {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0 350px;
+      justify-content: center;
+      .home-section {
+        flex: 1;
+        margin: 0 10px;
+        font-family: Architects Daughter, cursive;
+        min-width: 450px;
+        background-color: lightcoral;
+      }
+    }
+  }
 }
 @media #{$desktop} {
-}
-
-.home {
-  .nav-box {
-    display: flex;
-    justify-content: center;
-  }
-  .body-box {
-    display: flex;
-    font-family: sans-serif;
-    margin: 0 350px;
-    justify-content: center;
-    .home-section {
-      flex: 1;
-      margin: 0 30px;
-      font-family: Architects Daughter, cursive;
-      min-width: 450px;
-      background-color: lightcoral;
+  .home {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0 350px;
+      justify-content: center;
+      .home-section {
+        flex: 1;
+        margin: 0 30px;
+        font-family: Architects Daughter, cursive;
+        min-width: 450px;
+        background-color: lightcoral;
+      }
     }
   }
 }

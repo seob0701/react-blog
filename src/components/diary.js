@@ -4,7 +4,7 @@ import "../scss/diary.scss";
 
 const Diary = () => {
   return (
-    <div className="home">
+    <div className="diary">
       <div className="nav-box">
         <Nav />
       </div>
