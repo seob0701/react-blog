@@ -19,7 +19,7 @@ const Write = () => {
   //store 공부하자!!! 데이터 전달을 위해서
 
   return (
-    <div className="notice">
+    <div className="write">
       <div className="nav-box">
         <Nav />
       </div>

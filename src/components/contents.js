@@ -42,7 +42,7 @@ const Contents = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="home">
+    <div className="contents">
       <div className="nav-box">
         <Nav />
       </div>

@@ -1,27 +1,124 @@
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px 380px;
-  min-width: 760px;
-  width: 100%;
-  h1 {
-    a {
-      color: black;
-    }
-  }
-  .nav_list {
-    font-family: Architects Daughter, cursive;
+$phone: "Only screen and (max-width : 767px)";
+$tablet: "Only screen and (min-width : 768px)";
+$desktop: "Only screen and (min-width : 1024px)";
+
+@media #{$phone} {
+  .nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    li {
-      margin: 0;
-      padding: 0;
+    justify-content: space-between;
+    // padding: 10px;
+    margin: 10px 20px;
+    min-width: 354px;
+    width: 100%;
+    button {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      font-size: 20px;
+    }
+    h1 {
       a {
-        h5 {
-          margin-right: 15px;
-          padding: 0;
+        color: black;
+      }
+    }
+    .nav_list.desktop {
+      display: none;
+    }
+    .nav_list {
+      font-family: Architects Daughter, cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        font-size: 24px;
+      }
+
+      li {
+        margin: 0;
+        padding: 0;
+        a {
+          h5 {
+            margin-right: 15px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$tablet} {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 160px;
+    min-width: 670px;
+    width: 100%;
+    button {
+      display: none;
+    }
+    h1 {
+      a {
+        color: black;
+      }
+    }
+    .nav_list.phone {
+      display: none;
+    }
+    .nav_list {
+      font-family: Architects Daughter, cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin: 0;
+        padding: 0;
+        a {
+          h5 {
+            margin-right: 15px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media #{$desktop} {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 380px;
+    min-width: 760px;
+    width: 100%;
+    h1 {
+      a {
+        color: black;
+      }
+    }
+    .nav_list.phone {
+      display: none;
+    }
+    .nav_list {
+      font-family: Architects Daughter, cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin: 0;
+        padding: 0;
+        a {
+          h5 {
+            margin-right: 15px;
+            padding: 0;
+          }
         }
       }
     }

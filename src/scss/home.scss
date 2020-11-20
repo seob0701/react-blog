@@ -1,3 +1,14 @@
+$phone: "Only screen and (max-width : 767px)";
+$tablet: "Only screen and (min-width : 768px)";
+$desktop: "Only screen and (min-width : 1024px)";
+
+@media #{$phone} {
+}
+@media #{$tablet} {
+}
+@media #{$desktop} {
+}
+
 .home {
   .nav-box {
     display: flex;

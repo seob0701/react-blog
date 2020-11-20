@@ -1,85 +1,272 @@
-.home {
-  .nav-box {
-    display: flex;
-    justify-content: center;
-  }
-  .body-box {
-    display: flex;
-    font-family: sans-serif;
-    margin: 0 350px;
-    justify-content: center;
-    .contents-section {
-      flex: 1;
-      margin: 0 30px;
-      font-family: Do Hyeon, sans-serif;
-      min-width: 450px;
-      // background-color: lightcoral;
-      .titleAndDate {
-        border-bottom: 1px solid lightgray;
-        h3 {
-          margin-bottom: 24px;
-        }
-        p {
-          color: #999999;
-          a {
-            color: #999999;
-            margin-right: 8px;
-            font-size: 20px;
+$phone: "Only screen and (max-width : 767px)";
+$tablet: "Only screen and (min-width : 768px)";
+$desktop: "Only screen and (min-width : 1024px)";
+
+@media #{$phone} {
+  .contents {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      flex-direction: column-reverse;
+      font-family: sans-serif;
+      // margin: 0 350px;
+      justify-content: center;
+      .contents-section {
+        flex: 1;
+        margin: 30px 10px;
+        font-family: Do Hyeon, sans-serif;
+        min-width: 364px;
+        // background-color: lightcoral;
+        .titleAndDate {
+          border-bottom: 1px solid lightgray;
+          h3 {
+            margin-bottom: 24px;
           }
-        }
-      }
-      .description {
-        padding: 30px 0;
-      }
-      .commentAndShareBtns {
-        padding: 30px 0;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid lightgray;
-        button {
-          background: transparent;
-          outline: none;
-          border: none;
-          cursor: pointer;
           p {
-            font-family: Do Hyeon, sans-serif;
-            font-size: 18px;
-            padding: 8px;
-            margin: 0;
+            color: #999999;
+            a {
+              color: #999999;
+              margin-right: 8px;
+              font-size: 20px;
+            }
           }
         }
-      }
-      .comments {
-        ul {
-          margin: 30px 0;
-          padding: 0;
-          li {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            b {
-              margin-right: 20px;
-            }
+        .description {
+          padding: 30px 0;
+        }
+        .commentAndShareBtns {
+          padding: 30px 0;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid lightgray;
+          button {
+            background: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
             p {
-              padding: 0;
+              font-family: Do Hyeon, sans-serif;
+              font-size: 18px;
+              padding: 8px;
               margin: 0;
             }
           }
         }
-        section {
-          display: flex;
-          p {
+        .comments {
+          ul {
+            margin: 30px 0;
             padding: 0;
-            margin: 0;
-            margin-right: 20px;
-            padding-top: 4px;
+            li {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              b {
+                margin-right: 20px;
+              }
+              p {
+                padding: 0;
+                margin: 0;
+              }
+            }
           }
-          input {
-            flex: 1;
-            margin-right: 20px;
-            border: none;
-            border-bottom: 1px solid black;
+          section {
+            display: flex;
+            p {
+              padding: 0;
+              margin: 0;
+              margin-right: 20px;
+              padding-top: 4px;
+            }
+            input {
+              flex: 1;
+              margin-right: 20px;
+              border: none;
+              border-bottom: 1px solid black;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media #{$tablet} {
+  .contents {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0 350px;
+      justify-content: center;
+      .contents-section {
+        flex: 1;
+        margin: 0 10px;
+        font-family: Do Hyeon, sans-serif;
+        min-width: 450px;
+        // background-color: lightcoral;
+        .titleAndDate {
+          border-bottom: 1px solid lightgray;
+          h3 {
+            margin-bottom: 24px;
+          }
+          p {
+            color: #999999;
+            a {
+              color: #999999;
+              margin-right: 8px;
+              font-size: 20px;
+            }
+          }
+        }
+        .description {
+          padding: 30px 0;
+        }
+        .commentAndShareBtns {
+          padding: 30px 0;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid lightgray;
+          button {
+            background: transparent;
             outline: none;
+            border: none;
+            cursor: pointer;
+            p {
+              font-family: Do Hyeon, sans-serif;
+              font-size: 18px;
+              padding: 8px;
+              margin: 0;
+            }
+          }
+        }
+        .comments {
+          ul {
+            margin: 30px 0;
+            padding: 0;
+            li {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              b {
+                margin-right: 20px;
+              }
+              p {
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+          section {
+            display: flex;
+            p {
+              padding: 0;
+              margin: 0;
+              margin-right: 20px;
+              padding-top: 4px;
+            }
+            input {
+              flex: 1;
+              margin-right: 20px;
+              border: none;
+              border-bottom: 1px solid black;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media #{$desktop} {
+  .contents {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0 350px;
+      justify-content: center;
+      .contents-section {
+        flex: 1;
+        margin: 0 30px;
+        font-family: Do Hyeon, sans-serif;
+        min-width: 450px;
+        // background-color: lightcoral;
+        .titleAndDate {
+          border-bottom: 1px solid lightgray;
+          h3 {
+            margin-bottom: 24px;
+          }
+          p {
+            color: #999999;
+            a {
+              color: #999999;
+              margin-right: 8px;
+              font-size: 20px;
+            }
+          }
+        }
+        .description {
+          padding: 30px 0;
+        }
+        .commentAndShareBtns {
+          padding: 30px 0;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid lightgray;
+          button {
+            background: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            p {
+              font-family: Do Hyeon, sans-serif;
+              font-size: 18px;
+              padding: 8px;
+              margin: 0;
+            }
+          }
+        }
+        .comments {
+          ul {
+            margin: 30px 0;
+            padding: 0;
+            li {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              b {
+                margin-right: 20px;
+              }
+              p {
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+          section {
+            display: flex;
+            p {
+              padding: 0;
+              margin: 0;
+              margin-right: 20px;
+              padding-top: 4px;
+            }
+            input {
+              flex: 1;
+              margin-right: 20px;
+              border: none;
+              border-bottom: 1px solid black;
+              outline: none;
+            }
           }
         }
       }

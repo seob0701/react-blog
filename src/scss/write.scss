@@ -1,60 +1,215 @@
-.notice {
-  .nav-box {
-    display: flex;
-    justify-content: center;
-  }
-  .body-box {
-    display: flex;
-    font-family: sans-serif;
-    margin: 0 350px;
-    justify-content: center;
-    .notice-contents {
-      flex: 1;
-      margin-left: 50px;
+$phone: "Only screen and (max-width : 767px)";
+$tablet: "Only screen and (min-width : 768px)";
+$desktop: "Only screen and (min-width : 1024px)";
+
+@media #{$phone} {
+  .write {
+    .nav-box {
       display: flex;
       justify-content: center;
-      margin: 0 30px;
-      .notice-list {
-        width: 100%;
-        border: 1px solid black;
-        height: 650px;
-        // border-top: 1px solid lightgray;
-        // border-bottom: 1px solid lightgray;
-        padding: 30px;
-        .list-ul {
-          min-width: 450px;
-        }
-        .titleAndDesc {
-          display: flex;
-          flex-direction: column;
-          label {
-            margin: 20px 0;
+    }
+    .body-box {
+      display: flex;
+      flex-direction: column-reverse;
+      font-family: Do Hyeon, sans-serif;
+      justify-content: center;
+      aside {
+        display: none;
+      }
+      .notice-contents {
+        flex: 1;
+        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 30px 10px;
+        .notice-list {
+          width: 354px;
+          height: 600px;
+          border-top: 1px solid lightgray;
+          // border-bottom: 1px solid lightgray;
+          // padding: 10px;
+          .list-ul {
+            min-width: 364px;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
           }
-          input {
-            outline: none;
-            padding: 8px;
+          .titleAndDesc {
+            display: flex;
+            flex-direction: column;
+            label {
+              margin: 10px 0;
+            }
+            input {
+              outline: none;
+              padding: 8px;
+            }
+            textarea {
+              width: 99%;
+              height: 200px;
+              resize: none;
+              outline: none;
+            }
           }
-          textarea {
-            width: 99%;
-            height: 300px;
-            resize: none;
-            outline: none;
-          }
-        }
 
-        .createNotice {
-          margin-top: 20px;
-          display: flex;
-          justify-content: flex-end;
-          button {
-            background: transparent;
-            outline: none;
-            // border: none;
-            padding: 6px 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: Do Hyeon, sans-serif;
-            font-size: 16px;
+          .createNotice {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 30px;
+            border-bottom: 1px solid lightgray;
+            button {
+              background: transparent;
+              outline: none;
+              // border: none;
+              padding: 6px 10px;
+              border-radius: 4px;
+              cursor: pointer;
+              font-family: Do Hyeon, sans-serif;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media #{$tablet} {
+  .write {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0 350px;
+      justify-content: center;
+      .notice-contents {
+        flex: 1;
+        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 0 10px;
+        .notice-list {
+          width: 100%;
+          border: 1px solid black;
+          height: 610px;
+          font-family: Do Hyeon, sans-serif;
+          // border-top: 1px solid lightgray;
+          // border-bottom: 1px solid lightgray;
+          padding: 30px;
+          .list-ul {
+            min-width: 375px;
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            h5 {
+              padding: 0;
+              margin: 10px 0;
+            }
+          }
+          .titleAndDesc {
+            display: flex;
+            flex-direction: column;
+            label {
+              margin: 20px 0;
+            }
+            input {
+              outline: none;
+              padding: 8px;
+            }
+            textarea {
+              width: 99%;
+              height: 300px;
+              resize: none;
+              outline: none;
+            }
+          }
+
+          .createNotice {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            button {
+              background: transparent;
+              outline: none;
+              // border: none;
+              padding: 6px 10px;
+              border-radius: 4px;
+              cursor: pointer;
+              font-family: Do Hyeon, sans-serif;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media #{$desktop} {
+  .write {
+    .nav-box {
+      display: flex;
+      justify-content: center;
+    }
+    .body-box {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0 350px;
+      justify-content: center;
+      .notice-contents {
+        flex: 1;
+        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 0 30px;
+        .notice-list {
+          font-family: Do Hyeon, sans-serif;
+          width: 100%;
+          border: 1px solid black;
+          height: 650px;
+          // border-top: 1px solid lightgray;
+          // border-bottom: 1px solid lightgray;
+          padding: 30px;
+          .list-ul {
+            min-width: 450px;
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+          }
+          .titleAndDesc {
+            display: flex;
+            flex-direction: column;
+            label {
+              margin: 20px 0;
+            }
+            input {
+              outline: none;
+              padding: 8px;
+            }
+            textarea {
+              width: 99%;
+              height: 300px;
+              resize: none;
+              outline: none;
+            }
+          }
+
+          .createNotice {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+            button {
+              background: transparent;
+              outline: none;
+              // border: none;
+              padding: 6px 10px;
+              border-radius: 4px;
+              cursor: pointer;
+              font-family: Do Hyeon, sans-serif;
+              font-size: 16px;
+            }
           }
         }
       }
