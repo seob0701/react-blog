@@ -26,7 +26,7 @@ const Nav = () => {
             <BsBoxArrowRight />
           </button>
           <li>
-            <a href="/login">
+            <a href="/signin">
               <h5>Login</h5>
             </a>
           </li>
