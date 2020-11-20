@@ -1,39 +1,18 @@
 import React from "react";
 import { Aside, Nav } from "../components/index";
+import "../scss/shop.scss";
 
 const Shop = () => {
   return (
-    <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+    <div className="shop">
+      <div className="nav-box">
         <Nav />
       </div>
-      <div
-        style={{
-          display: "flex",
-          fontFamily: "sans-serif",
-          margin: "0 350px",
-          justifyContent: "center",
-        }}
-      >
+      <div className="body-box">
         <aside>
           <Aside />
         </aside>
-        <section
-          style={{
-            flex: "1",
-            margin: "0 30px",
-            fontFamily: "Architects Daughter, cursive",
-            minWidth: "450px",
-            backgroundColor: "lightcoral",
-          }}
-        >
-          Shop
-        </section>
+        <section className="shop-section">Shop</section>
       </div>
     </div>
   );

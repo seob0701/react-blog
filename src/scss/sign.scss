@@ -10,14 +10,13 @@ $desktop: "Only screen and (min-width : 1024px)";
       justify-content: center;
       align-items: center;
       flex: 1;
-      margin-left: 15px;
-      padding: 100px 0;
+      // margin-left: 15px;
+      padding: 50px 0;
       form {
         display: flex;
         flex-direction: column;
-        padding: 20px;
-        width: 400px;
-        height: 500px;
+        // padding: 20px;
+        width: 345px;
         h1 {
           font-size: 32px;
         }
@@ -95,6 +94,7 @@ $desktop: "Only screen and (min-width : 1024px)";
           display: flex;
           justify-content: space-between;
           input {
+            font-family: Do Hyeon, sans-serif;
             background-color: transparent;
             outline: none;
             border: none;
@@ -198,6 +198,7 @@ $desktop: "Only screen and (min-width : 1024px)";
           display: flex;
           justify-content: space-between;
           input {
+            font-family: Do Hyeon, sans-serif;
             background-color: transparent;
             outline: none;
             border: none;
@@ -301,6 +302,7 @@ $desktop: "Only screen and (min-width : 1024px)";
           display: flex;
           justify-content: space-between;
           input {
+            font-family: Do Hyeon, sans-serif;
             background-color: transparent;
             outline: none;
             border: none;
