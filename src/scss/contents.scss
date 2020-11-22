@@ -87,6 +87,16 @@ $desktop: "Only screen and (min-width : 1024px)";
               border-bottom: 1px solid black;
               outline: none;
             }
+            button {
+              background: #0061fe;
+              border: none;
+              color: white;
+              padding: 6px 10px;
+              font-weight: bold;
+              &:hover {
+                background: #0259e7;
+              }
+            }
           }
         }
       }
@@ -177,6 +187,16 @@ $desktop: "Only screen and (min-width : 1024px)";
               border-bottom: 1px solid black;
               outline: none;
             }
+            button {
+              background: #0061fe;
+              border: none;
+              color: white;
+              padding: 6px 10px;
+              font-weight: bold;
+              &:hover {
+                background: #0259e7;
+              }
+            }
           }
         }
       }
@@ -266,6 +286,16 @@ $desktop: "Only screen and (min-width : 1024px)";
               border: none;
               border-bottom: 1px solid black;
               outline: none;
+            }
+            button {
+              background: #0061fe;
+              border: none;
+              color: white;
+              padding: 6px 10px;
+              font-weight: bold;
+              &:hover {
+                background: #0259e7;
+              }
             }
           }
         }

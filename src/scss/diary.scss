@@ -17,9 +17,49 @@ $desktop: "Only screen and (min-width : 1024px)";
       .diary-section {
         flex: 1;
         margin: 10px;
-        font-family: Architects Daughter, cursive;
+        font-family: Do Hyeon, sans-serif;
         min-width: 345px;
-        background-color: lightcoral;
+        // background-color: lightcoral;
+        .diary-box {
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          border-bottom: 1px solid lightgray;
+          img {
+            max-width: 100%;
+          }
+          p {
+          }
+          .writer {
+            display: flex;
+            align-items: center;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              margin-right: 8px;
+            }
+            .writerInfo {
+              p {
+                margin: 0 8px;
+                padding: 0;
+              }
+              div {
+                display: flex;
+                align-items: center;
+                p {
+                  margin: 0 8px;
+                  padding: 0;
+                }
+                .like {
+                  display: flex;
+                  align-items: center;
+                  p {
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -38,9 +78,49 @@ $desktop: "Only screen and (min-width : 1024px)";
       .diary-section {
         flex: 1;
         margin: 0 10px;
-        font-family: Architects Daughter, cursive;
-        min-width: 450px;
-        background-color: lightcoral;
+        font-family: Do Hyeon, sans-serif;
+        min-width: 400px;
+        // background-color: lightcoral;
+        .diary-box {
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          border-bottom: 1px solid lightgray;
+          img {
+            max-width: 100%;
+          }
+          p {
+          }
+          .writer {
+            display: flex;
+            align-items: center;
+            img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              margin-right: 8px;
+            }
+            .writerInfo {
+              p {
+                margin: 0 8px;
+                padding: 0;
+              }
+              div {
+                display: flex;
+                align-items: center;
+                p {
+                  margin: 0 8px;
+                  padding: 0;
+                }
+                .like {
+                  display: flex;
+                  align-items: center;
+                  p {
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -59,9 +139,49 @@ $desktop: "Only screen and (min-width : 1024px)";
       .diary-section {
         flex: 1;
         margin: 0 30px;
-        font-family: Architects Daughter, cursive;
+        font-family: Do Hyeon, sans-serif;
         min-width: 450px;
-        background-color: lightcoral;
+
+        .diary-box {
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+          border-bottom: 1px solid lightgray;
+          img {
+            max-width: 100%;
+          }
+          p {
+          }
+          .writer {
+            display: flex;
+            align-items: center;
+            img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              margin-right: 8px;
+            }
+            .writerInfo {
+              p {
+                margin: 0 8px;
+                padding: 0;
+              }
+              div {
+                display: flex;
+                align-items: center;
+                p {
+                  margin: 0 8px;
+                  padding: 0;
+                }
+                .like {
+                  display: flex;
+                  align-items: center;
+                  p {
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
