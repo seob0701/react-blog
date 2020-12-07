@@ -16,6 +16,8 @@ $desktop: "Only screen and (min-width : 1024px)";
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 
     // padding: 10px;
     margin: 10px 0px;
@@ -40,6 +42,7 @@ $desktop: "Only screen and (min-width : 1024px)";
     .nav_list {
       animation-name: slide;
       animation-duration: 1s;
+      transition: all;
 
       font-family: Architects Daughter, cursive;
       display: flex;

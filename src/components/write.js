@@ -3,14 +3,6 @@ import "../scss/write.scss";
 import { useHistory } from "react-router-dom";
 import { Aside, Nav } from "../components/index";
 
-const notice_list = [
-  {
-    title: "공지사항",
-    description: "오늘은 11월 19일 입니다.",
-    date: "2020-11-16",
-  },
-];
-
 const Write = () => {
   const history = useHistory();
   const handleClick = () => {
@@ -20,9 +12,7 @@ const Write = () => {
 
   return (
     <div className="write">
-      <div className="nav-box">
-        <Nav />
-      </div>
+      
       <div className="body-box">
         <aside>
           <Aside />

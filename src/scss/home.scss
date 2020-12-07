@@ -15,11 +15,22 @@ $desktop: "Only screen and (min-width : 1024px)";
       // margin: 0 350px;
       justify-content: center;
       .home-section {
+        h1 {
+          margin: 0 0 10px;
+          padding: 0;
+        }
         flex: 1;
         margin: 10px;
         font-family: Architects Daughter, cursive;
         min-width: 345px;
-        background-color: lightcoral;
+        .album_box {
+          text-align: center;
+          border: 1px solid lightgray;
+          margin-bottom: 20px;
+          img {
+            width: 90%;
+          }
+        }
       }
     }
   }
@@ -36,11 +47,22 @@ $desktop: "Only screen and (min-width : 1024px)";
       margin: 0 350px;
       justify-content: center;
       .home-section {
+        h1 {
+          margin: 0 0 10px;
+          padding: 0;
+        }
         flex: 1;
         margin: 0 10px;
         font-family: Architects Daughter, cursive;
         min-width: 450px;
-        background-color: lightcoral;
+        .album_box {
+          text-align: center;
+          border: 1px solid lightgray;
+          margin-bottom: 20px;
+          img {
+            width: 300px;
+          }
+        }
       }
     }
   }
@@ -57,11 +79,23 @@ $desktop: "Only screen and (min-width : 1024px)";
       margin: 0 350px;
       justify-content: center;
       .home-section {
+        h1 {
+          margin: 0 0 10px;
+          padding: 0;
+        }
         flex: 1;
         margin: 0 30px;
         font-family: Architects Daughter, cursive;
         min-width: 450px;
-        background-color: lightcoral;
+        .album_box {
+          text-align: center;
+          border: 1px solid lightgray;
+          margin-bottom: 20px;
+          img {
+            width: 100%;
+            max-width: 600px;
+          }
+        }
       }
     }
   }

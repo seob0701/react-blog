@@ -17,3 +17,12 @@ a {
 a:hover {
   color: black;
 }
+
+.nav-box {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}

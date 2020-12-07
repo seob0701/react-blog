@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../scss/nav.scss";
 import { FaBars } from "react-icons/fa";
-import { RiCloseLine } from "react-icons/ri";
 import { BsBoxArrowRight } from "react-icons/bs";
 
 const Nav = () => {
@@ -54,11 +53,7 @@ const Nav = () => {
       )}
 
       <ul className="nav_list desktop">
-        <li>
-          <a href="/mypage">
-            <h5>My page</h5>
-          </a>
-        </li>
+        
         <li>
           <a href="/signin">
             <h5 style={{ margin: "0", padding: "0" }}>Login</h5>

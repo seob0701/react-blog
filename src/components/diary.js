@@ -34,9 +34,6 @@ const data = [
 const Diary = () => {
   return (
     <div className="diary">
-      <div className="nav-box">
-        <Nav />
-      </div>
       <div className="body-box">
         <aside>
           <Aside />

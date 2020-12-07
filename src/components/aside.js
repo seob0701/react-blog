@@ -8,7 +8,7 @@ const Aside = () => {
       <img src={profile} alt="" />
       <section className="intro">
         <b>Shim Yu Seob</b>
-        <p>this is my Portfolio</p>
+        <p>this is my blog</p>
         <a
           href="https://www.instagram.com/shimyuseob/"
           target="_blank"
@@ -37,9 +37,6 @@ const Aside = () => {
           </li>
           <li>
             <a href="/notice">Notice</a>
-          </li>
-          <li>
-            <a href="/shop">Shop</a>
           </li>
         </ul>
       </section>

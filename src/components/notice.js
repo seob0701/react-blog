@@ -2,43 +2,19 @@ import React from "react";
 import "../scss/notice.scss";
 import { useHistory } from "react-router-dom";
 import { Aside, Nav } from "../components/index";
-
-const notice_list = [
-  {
-    title: "공지사항",
-    description: "오늘은 11월 19일 입니다.",
-    date: "2020-11-16",
-  },
-  {
-    title: "게시판 코드 작성하기",
-    description:
-      "게시판 작성 및 클릭시 해당 게시글 디스플레이 구현 진행 하겠습니다.",
-    date: "2020-11-17",
-  },
-  {
-    title: "관리자 로그인 및 공지사항 작성 페이지 구현",
-    description: "이번 로그인 구현은 파이어베이스로 해보겠습니다.",
-    date: "2020-11-18",
-  },
-  {
-    title: "파이어베이스 DB 연결",
-    description: "생각보다 작업이 쉽진 않겠습니다...",
-    date: "2020-11-18",
-  },
-];
+import list from "../json/notice_list.json";
 
 const Notice = () => {
   const history = useHistory();
   const handleClick = (ele) => {
-    history.push("/contents");
+    history.push(`/contents/${ele.id}`);
   };
   //store 공부하자!!! 데이터 전달을 위해서
 
+  console.log(list.notice_list);
+
   return (
     <div className="notice">
-      <div className="nav-box">
-        <Nav />
-      </div>
       <div className="body-box">
         <aside>
           <Aside />
@@ -52,7 +28,7 @@ const Notice = () => {
               </li>
             </ul>
 
-            {notice_list.map((ele, index) => {
+            {list.notice_list.map((ele, index) => {
               return (
                 <ul key={index}>
                   <li

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Aside, Nav } from "../components/index";
 import "../scss/contents.scss";
 import { GoComment } from "react-icons/go";
 import { RiShareLine } from "react-icons/ri";
+import list from "../json/notice_list.json";
 
 const userInfo = [
   {
@@ -11,14 +12,7 @@ const userInfo = [
   },
 ];
 
-const notice_list = [
-  {
-    title: "공지사항",
-    description:
-      "지금 나머지 scss를 마치고 contents 페이지 디자인 중입니다. 빨리 게시판 디자인 및 구성을 끝내고 DB와 서버 부분도 만들 수 있으면 좋겠습니다.",
-    date: "2020-11-16",
-  },
-]; //넘어온 데이터라 가정.
+const notice_list = list.notice_list;
 
 const comments = [
   {
@@ -38,28 +32,33 @@ const comments = [
   },
 ];
 
+console.log(notice_list);
+
 const Contents = () => {
   const [toggle, setToggle] = useState(false);
 
+  const [listId, setListId] = useState(1);
+
+  useEffect(() => {
+    setListId(parseInt(window.location.pathname.split("/")[2]));
+  }, []);
+
   return (
     <div className="contents">
-      <div className="nav-box">
-        <Nav />
-      </div>
       <div className="body-box">
         <aside>
           <Aside />
         </aside>
         <section className="contents-section">
           <div className="titleAndDate">
-            <h3>{notice_list[0].title}</h3>
+            <h3>{notice_list[listId - 1].title}</h3>
             <p>
               <a href="/notice">notice</a>
-              {notice_list[0].date}
+              {notice_list[listId - 1].date}
             </p>
           </div>
           <div className="description">
-            <p>{notice_list[0].description}</p>
+            <p>{notice_list[listId - 1].description}</p>
           </div>
           <div className="commentAndShareBtns">
             <button
